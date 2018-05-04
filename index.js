@@ -23,7 +23,7 @@ class Route {
 
     return blocks
   }
-  estimatedTime() {
+  estimatedTime(peakTime) {
     let blocks = this.blocksTravelled()
     if (peakTime === true) {
       return blocks/2
