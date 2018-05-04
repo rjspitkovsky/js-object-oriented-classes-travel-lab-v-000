@@ -15,6 +15,7 @@ class Route {
   }
   blocksTravelled() {
     let blocks = 0
-  
+    blocks += Math.abs(this.endingLocation.vertical - this.beginningLocation.vertical)
+    return blocks 
   }
 }
