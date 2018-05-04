@@ -17,18 +17,20 @@ class Route {
     let blocks = 0
     let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
 
-    for (const element of eastWest) {
-      if (element === this.beginningLocation.horizontal) {
-        let i = element
-      }
-    }
-    for (const element of eastWest) {
-      if (element === this.endingLocation.horizontal) {
-        let j = element
-      }
-    }
+    // let i = []
+    // for (const element of eastWest) {
+    //   if (element === this.beginningLocation.horizontal) {
+    //     i.push(element)
+    //   }
+    // }
+    // let j = []
+    // for (const element of eastWest) {
+    //   if (element === this.endingLocation.horizontal) {
+    //     j.push(element)
+    //   }
+    // }
 
-    blocks += Math.abs(i - j)
+    blocks += Math.abs(eastWest.indexOf(this.beginningLocation.horizontal) - eastWest.indexOf(this.endingLocation.horizontal))
 
     blocks += Math.abs(this.endingLocation.vertical - this.beginningLocation.vertical)
 
