@@ -24,11 +24,11 @@ class Route {
       element === this.endingLocation.horizontal
     }
 
-    blocks += Math.abs(i - j)
-    
+    // blocks += Math.abs(i - j)
+
     blocks += Math.abs(this.endingLocation.vertical - this.beginningLocation.vertical)
-    
-    
-    return blocks 
+
+
+    return blocks
   }
 }
